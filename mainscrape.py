@@ -20,7 +20,7 @@ def getAddresses(bsObj):
 		# Strips tel out of address
 		addressClean = address.split("Tel:")[0]
 		addresses.append(addressClean)
-	addresses = addresses[1::2]	# deletes every odd item (names were being include, NOT SURE WHY??)
+	addresses = addresses[1::2]	# deletes every odd item (names were being included)
 	return addresses
 
 def getTel(bsObj):
@@ -76,8 +76,7 @@ while True:
 """ 23/01/16 ----------------------------
 All working. Next:
 1. Plan arrangement of database		e.g what fields we need (industry?), how to arrange in tables
-2. Learn how to store to db
-3. Download sqlpro? Visual editor
+
 ---------------------------------------"""
 
 
